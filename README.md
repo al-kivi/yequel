@@ -1,7 +1,9 @@
 # Yequel
 
-Provides a sequel style ORM layer for YAML::Store.
-Yequel provides a sequel style with basic features to access YAML::Store tables.  Its target audience is application developers who require light weight alternative to SQL databases.
+Provides a Sequel style ORM layer for YAML::Store.
+Yequel supports the Sequel syntax with a subset of commands to access YAML::Store tables.  Its target audience is application developers who require light weight alternative to SQL databases.
+
+Yequel provides a small subset of Sequel commands with a goal of allowing for an exchange of the sqlite3 database with YAML::Store.
 
 ## Installation
 
@@ -21,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Yequel can be used as alternative for Sequel in Ruby frameworks like Sinatra. The Yequel was tested to replace a multi-table implementation that had been built with Sequel and the Sqlite database.
 
 ## Development / Testing
 
@@ -41,11 +43,11 @@ Artist.insert(:id=>3, :name=>"AS")
 
 Artist[1]
 ``` 
- 
+The Yequel commands include a subset of the common commands that are used in an Sequel implementation. 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/yequel. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/al-kivi/yequel. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
